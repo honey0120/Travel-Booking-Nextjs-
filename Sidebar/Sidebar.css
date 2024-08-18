@@ -1,0 +1,25 @@
+
+#sidebar-instructor {
+  width: 200px;
+  border-right: 2px solid #e5e5e5;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgb(73, 182, 211, 0.7);
+  padding-top: 100px;
+  transition: 0.3s ease-out;
+}
+.hideDisplaySidebar{
+  width: 0px !important;
+}
+
+#sidebar-instructor::-webkit-scrollbar {
+  display: none;
+}
+#sidebar-instructor {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
