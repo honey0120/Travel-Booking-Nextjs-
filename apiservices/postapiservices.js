@@ -4,7 +4,7 @@ exports.selectData = async (query, projection) => {
     projection: projection,
   };
   const res = await fetch(
-    "https://travel-booking-site-backend.vercel.app/apis/v1/select-posts",
+    "https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/select-posts",
     {
       method: "POST",
       headers: {
@@ -28,7 +28,7 @@ exports.selectDataPublic = async (query, projection) => {
     projection: projection,
   };
   const res = await fetch(
-    "https://travel-booking-site-backend.vercel.app/apis/v1/select-posts-public",
+    "https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/select-posts-public",
     {
       method: "POST",
       headers: {
@@ -49,7 +49,7 @@ exports.selectDataPublic = async (query, projection) => {
 
 exports.deleteData = async (id) => {
   const res = await fetch(
-    `https://travel-booking-site-backend.vercel.app/apis/v1/delete-post/${id}`,
+    `https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/delete-post/${id}`,
     {
       method: "DELETE",
       headers: {
@@ -97,7 +97,7 @@ exports.createData = async (
   };
 
   const res = await fetch(
-    `https://travel-booking-site-backend.vercel.app/apis/v1/create-post`,
+    `https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/create-post`,
     {
       method: "POST",
       headers: {
@@ -148,7 +148,7 @@ exports.updateData = async (
   };
 
   const res = await fetch(
-    `https://travel-booking-site-backend.vercel.app/apis/v1/update-post`,
+    `https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/update-post`,
     {
       method: "PUT",
       headers: {

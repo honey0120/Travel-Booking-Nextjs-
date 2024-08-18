@@ -3,14 +3,17 @@ exports.selectData = async (query, projection) => {
     query: query,
     projection: projection,
   };
-  const res = await fetch("https://travel-booking-site-backend.vercel.app/apis/v1/select-conversations", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(payloaddata),
-     credentials: 'include'
-  });
+  const res = await fetch(
+    "https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/select-conversations",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payloaddata),
+      credentials: "include",
+    }
+  );
 
   if (!res.ok) {
     // This will activate the closest `error.js` Error Boundary
@@ -25,14 +28,17 @@ exports.selectAllData = async (query, projection) => {
     query: query,
     projection: projection,
   };
-  const res = await fetch("https://travel-booking-site-backend.vercel.app/apis/v1/select-conversations-public", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(payloaddata),
-     credentials: 'include'
-  });
+  const res = await fetch(
+    "https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/select-conversations-public",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payloaddata),
+      credentials: "include",
+    }
+  );
 
   if (!res.ok) {
     // This will activate the closest `error.js` Error Boundary
@@ -45,16 +51,18 @@ exports.selectAllData = async (query, projection) => {
 exports.deleteData = async (id) => {
   console.log("clicked" + id);
 
-  const res = await fetch(`https://travel-booking-site-backend.vercel.app/apis/v1/delete-conversation/${id}`, {
-    method: "DELETE",
-    headers: {
-      "Content-Type": "application/json",
-    },
-     credentials: 'include'
-  });
+  const res = await fetch(
+    `https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/delete-conversation/${id}`,
+    {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      credentials: "include",
+    }
+  );
 
   if (!res.ok) {
-  
     // This will activate the closest `error.js` Error Boundary
     throw new Error("Failed to fetch data");
   }
@@ -79,17 +87,19 @@ exports.createData = async (
     selectedPackageID,
   };
 
-  const res = await fetch(`https://travel-booking-site-backend.vercel.app/apis/v1/create-conversation`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(aboutdata),
-     credentials: 'include'
-  });
+  const res = await fetch(
+    `https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/create-conversation`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(aboutdata),
+      credentials: "include",
+    }
+  );
 
   if (!res.ok) {
-   
     // This will activate the closest `error.js` Error Boundary
     throw new Error("Failed to fetch data");
   }
@@ -116,14 +126,17 @@ exports.updateData = async (
     selectedPackageID,
   };
 
-  const res = await fetch(`https://travel-booking-site-backend.vercel.app/apis/v1/update-conversation`, {
-    method: "PUT",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(aboutdata),
-     credentials: 'include'
-  });
+  const res = await fetch(
+    `https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/update-conversation`,
+    {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(aboutdata),
+      credentials: "include",
+    }
+  );
 
   if (!res.ok) {
     // This will activate the closest `error.js` Error Boundary

@@ -4,7 +4,7 @@ exports.selectData = async (query, projection) => {
     projection: projection,
   };
   const res = await fetch(
-    "https://travel-booking-site-backend.vercel.app/apis/v1/select-clients",
+    "https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/select-clients",
     {
       method: "POST",
       headers: {
@@ -28,7 +28,7 @@ exports.selectAllData = async (query, projection) => {
     projection: projection,
   };
   const res = await fetch(
-    "https://travel-booking-site-backend.vercel.app/apis/v1/select-all-clients",
+    "https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/select-all-clients",
     {
       method: "POST",
       headers: {
@@ -51,7 +51,7 @@ exports.selectAllDataPublic = async (query) => {
     query: query,
   };
   const res = await fetch(
-    "https://travel-booking-site-backend.vercel.app/apis/v1/select-all-clients-public",
+    "https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/select-all-clients-public",
     {
       method: "POST",
       headers: {
@@ -74,7 +74,7 @@ exports.deleteData = async (id) => {
   console.log("clicked" + id);
 
   const res = await fetch(
-    `https://travel-booking-site-backend.vercel.app/apis/v1/delete-client/${id}`,
+    `https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/delete-client/${id}`,
     {
       method: "DELETE",
       headers: {
@@ -111,7 +111,7 @@ exports.createData = async (
   };
 
   const res = await fetch(
-    `https://travel-booking-site-backend.vercel.app/apis/v1/create-client`,
+    `https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/create-client`,
     {
       method: "POST",
       headers: {
@@ -150,7 +150,7 @@ exports.updateData = async (
   };
 
   const res = await fetch(
-    `https://travel-booking-site-backend.vercel.app/apis/v1/update-client`,
+    `https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/update-client`,
     {
       method: "PUT",
       headers: {

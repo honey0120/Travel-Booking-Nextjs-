@@ -4,7 +4,7 @@ exports.selectData = async (query, projection) => {
     projection: projection,
   };
   const res = await fetch(
-    "https://travel-booking-site-backend.vercel.app/apis/v1/select-instructors",
+    "https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/select-instructors",
     {
       method: "POST",
       headers: {
@@ -28,7 +28,7 @@ exports.selectAllData = async (query, projection) => {
     projection: projection,
   };
   const res = await fetch(
-    "https://travel-booking-site-backend.vercel.app/apis/v1/select-all-instructors",
+    "https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/select-all-instructors",
     {
       method: "POST",
       headers: {
@@ -51,7 +51,7 @@ exports.selectAllDataPublic = async (query) => {
     query: query,
   };
   const res = await fetch(
-    "https://travel-booking-site-backend.vercel.app/apis/v1/select-all-instructors-public",
+    "https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/select-all-instructors-public",
     {
       method: "POST",
       headers: {
@@ -72,7 +72,7 @@ exports.selectAllDataPublic = async (query) => {
 
 exports.deleteData = async (id) => {
   const res = await fetch(
-    `https://travel-booking-site-backend.vercel.app/apis/v1/delete-instructor/${id}`,
+    `https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/delete-instructor/${id}`,
     {
       method: "DELETE",
       headers: {
@@ -112,7 +112,7 @@ exports.createData = async (
   };
 
   const res = await fetch(
-    `https://travel-booking-site-backend.vercel.app/apis/v1/create-instructor`,
+    `https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/create-instructor`,
     {
       method: "POST",
       headers: {
@@ -155,7 +155,7 @@ exports.updateData = async (
   };
 
   const res = await fetch(
-    `https://travel-booking-site-backend.vercel.app/apis/v1/update-instructor`,
+    `https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/update-instructor`,
     {
       method: "PUT",
       headers: {

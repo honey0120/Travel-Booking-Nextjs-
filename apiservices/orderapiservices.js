@@ -4,7 +4,7 @@ exports.selectData = async (query, projection) => {
     projection: projection,
   };
   const res = await fetch(
-    "https://travel-booking-site-backend.vercel.app/apis/v1/select-orders",
+    "https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/select-orders",
     {
       method: "POST",
       headers: {
@@ -25,7 +25,7 @@ exports.selectData = async (query, projection) => {
 
 exports.deleteData = async (id) => {
   const res = await fetch(
-    `https://travel-booking-site-backend.vercel.app/apis/v1/delete-order/${id}`,
+    `https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/delete-order/${id}`,
     {
       method: "DELETE",
       headers: {
@@ -67,7 +67,7 @@ exports.createData = async (
   };
 
   const res = await fetch(
-    `https://travel-booking-site-backend.vercel.app/apis/v1/create-order`,
+    `https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/create-order`,
     {
       method: "POST",
       headers: {
@@ -112,7 +112,7 @@ exports.updateData = async (
   };
 
   const res = await fetch(
-    `https://travel-booking-site-backend.vercel.app/apis/v1/update-order`,
+    `https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/update-order`,
     {
       method: "PUT",
       headers: {

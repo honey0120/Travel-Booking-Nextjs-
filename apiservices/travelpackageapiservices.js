@@ -3,7 +3,7 @@ exports.selectData = async (query, projection) => {
     query: query,
     projection: projection,
   };
-  const res = await fetch("https://travel-booking-site-backend.vercel.app/apis/v1/select-packages", {
+  const res = await fetch("https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/select-packages", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -24,7 +24,7 @@ exports.selectDataPublic = async (query, projection) => {
     query: query,
     projection: projection,
   };
-  const res = await fetch("https://travel-booking-site-backend.vercel.app/apis/v1/select-packages-public", {
+  const res = await fetch("https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/select-packages-public", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -42,7 +42,7 @@ exports.selectDataPublic = async (query, projection) => {
 };
 
 exports.deleteData = async (id) => {
-  const res = await fetch(`https://travel-booking-site-backend.vercel.app/apis/v1/delete-package/${id}`, {
+  const res = await fetch(`https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/delete-package/${id}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",
@@ -115,7 +115,7 @@ exports.createData = async (
     travelTimeTwo,
   };
 
-  const res = await fetch(`https://travel-booking-site-backend.vercel.app/apis/v1/create-package`, {
+  const res = await fetch(`https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/create-package`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -192,7 +192,7 @@ exports.updateData = async (
     travelTimeTwo,
   };
 
-  const res = await fetch(`https://travel-booking-site-backend.vercel.app/apis/v1/update-package`, {
+  const res = await fetch(`https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/update-package`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",

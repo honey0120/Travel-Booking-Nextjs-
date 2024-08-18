@@ -4,14 +4,14 @@ exports.selectData = async (query, projection) => {
     projection: projection,
   };
   const res = await fetch(
-    "https://travel-booking-site-backend.vercel.app/apis/v1/select-messages",
+    "https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/select-messages",
     {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(payloaddata),
-       credentials: 'include'
+      credentials: "include",
     }
   );
 
@@ -29,14 +29,14 @@ exports.selectAllData = async (query, projection) => {
     projection: projection,
   };
   const res = await fetch(
-    "https://travel-booking-site-backend.vercel.app/apis/v1/select-messages-public",
+    "https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/select-messages-public",
     {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(payloaddata),
-       credentials: 'include'
+      credentials: "include",
     }
   );
 
@@ -50,7 +50,7 @@ exports.selectAllData = async (query, projection) => {
 
 exports.deleteData = async (id) => {
   const res = await fetch(
-    `https://travel-booking-site-backend.vercel.app/apis/v1/delete-message/${id}`,
+    `https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/delete-message/${id}`,
     {
       method: "DELETE",
       headers: {
@@ -98,7 +98,7 @@ exports.createData = async (
   };
 
   const res = await fetch(
-    `https://travel-booking-site-backend.vercel.app/apis/v1/create-message`,
+    `https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/create-message`,
     {
       method: "POST",
       headers: {
@@ -119,7 +119,7 @@ exports.createData = async (
 
 exports.updateData = async (aboutdata) => {
   const res = await fetch(
-    `https://travel-booking-site-backend.vercel.app/apis/v1/update-message`,
+    `https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/update-message`,
     {
       method: "PUT",
       headers: {

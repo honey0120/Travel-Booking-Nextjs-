@@ -1,7 +1,7 @@
 exports.isAdmin = async () => {
   try {
     const response = await fetch(
-      "https://travel-booking-site-backend.vercel.app/apis/v1/isAdmin",
+      "https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/isAdmin",
       {
         method: "POST",
         headers: {
@@ -32,7 +32,7 @@ exports.clientLogin = async (userName, password) => {
     password,
   };
   const res = await fetch(
-    "https://travel-booking-site-backend.vercel.app/apis/v1/client-login",
+    "https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/client-login",
     {
       method: "POST",
       headers: {
@@ -57,7 +57,7 @@ exports.instructorLogin = async (userName, password) => {
     password,
   };
   const res = await fetch(
-    "https://travel-booking-site-backend.vercel.app/apis/v1/instructor-login",
+    "https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/instructor-login",
     {
       method: "POST",
       headers: {
@@ -78,7 +78,7 @@ exports.instructorLogin = async (userName, password) => {
 
 exports.logout = async () => {
   const res = await fetch(
-    "https://travel-booking-site-backend.vercel.app/apis/v1/logout",
+    "https://travel-booking-backend-express-js-mongo-db-vercel.vercel.app/apis/v1/logout",
     {
       method: "POST",
       headers: {
