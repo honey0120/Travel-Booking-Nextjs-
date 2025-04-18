@@ -12,7 +12,7 @@ A brief description of what this project does and who it's for
 To deploy this project run the following command:
 
 ```bash
-  git clone https://github.com/bigosofts/Travel-Booking-Frontend-NextJS-Redux-Vercel.git
+  git clone https://github.com/honey0120/Travel-Booking-Nextjs-.git
 ```
 
 
