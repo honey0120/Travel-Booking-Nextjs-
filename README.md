@@ -15,9 +15,6 @@ To deploy this project run the following command:
   git clone https://github.com/bigosofts/Travel-Booking-Frontend-NextJS-Redux-Vercel.git
 ```
 
-```bash
-  cd Travel-Booking-Frontend-NextJS-Redux-Vercel
-```
 
 ```bash
   yarn install
@@ -34,7 +31,7 @@ To deploy this project run the following command:
 
 ## Authors
 
-- [@Abdullah Al Amin](https://github.com/bigosofts)
+- [@Honey](https://github.com/honey0120)
 
 
 ## Demo
@@ -100,10 +97,6 @@ https://travel-booking-frontend-next-js-redux-vercel.vercel.app/
 
   Single Package Page
 ![App Screenshot](https://atiqlab.bigosofts.com/wp-content/uploads/2024/08/Screenshot-from-2024-08-25-12-55-11.png)
-
-## Support
-
-For support, email bigosofts@gmail.com or contact me on Facebook or LinkedIn. You will find social media link in my github profile
 
 
 ## FAQ
